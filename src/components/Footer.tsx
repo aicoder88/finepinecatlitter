@@ -31,16 +31,16 @@ export default function Footer() {
         <div className={styles.column}>
           <h4>Purrify</h4>
           <div className={styles.links}>
-            <a href={purrifyUrl('/products', 'footer')} target="_blank" rel="noopener noreferrer">
+            <a href={purrifyUrl('/products', 'footer')}>
               All Products
             </a>
-            <a href={purrifyUrl('/learn/how-it-works', 'footer')} target="_blank" rel="noopener noreferrer">
+            <a href={purrifyUrl('/learn/how-it-works', 'footer')}>
               How It Works
             </a>
-            <a href={purrifyUrl('/learn/science', 'footer')} target="_blank" rel="noopener noreferrer">
+            <a href={purrifyUrl('/learn/science', 'footer')}>
               The Science
             </a>
-            <a href={purrifyUrl('/learn/faq', 'footer')} target="_blank" rel="noopener noreferrer">
+            <a href={purrifyUrl('/learn/faq', 'footer')}>
               FAQ
             </a>
           </div>
@@ -49,10 +49,10 @@ export default function Footer() {
         <div className={styles.column}>
           <h4>Support</h4>
           <div className={styles.links}>
-            <a href={purrifyUrl('/learn/safety', 'footer')} target="_blank" rel="noopener noreferrer">
+            <a href={purrifyUrl('/learn/safety', 'footer')}>
               Safety Info
             </a>
-            <a href={purrifyUrl('/contact', 'footer')} target="_blank" rel="noopener noreferrer">
+            <a href={purrifyUrl('/contact', 'footer')}>
               Contact Us
             </a>
           </div>
