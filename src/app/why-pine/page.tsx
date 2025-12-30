@@ -3,9 +3,19 @@ import Link from 'next/link';
 import styles from '@/styles/pages.module.css';
 
 export const metadata: Metadata = {
-  title: 'Why Pine Cat Litter',
+  title: 'Why Pine Cat Litter Works - The Science of Natural Odor Control',
   description:
     'Learn why pine is nature\'s perfect cat litter material. Discover the science behind pine\'s natural odor control and sustainability benefits.',
+  alternates: {
+    canonical: '/why-pine',
+  },
+  openGraph: {
+    title: 'Why Pine Cat Litter Works - The Science of Natural Odor Control',
+    description:
+      'Learn why pine is nature\'s perfect cat litter material. Discover the science behind pine\'s natural odor control.',
+    url: '/why-pine',
+    images: ['/og-image.png'],
+  },
 };
 
 const purrifyUrl = (path: string, medium: string) =>

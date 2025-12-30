@@ -3,9 +3,19 @@ import Link from 'next/link';
 import styles from '@/styles/pages.module.css';
 
 export const metadata: Metadata = {
-  title: 'Compare Cat Litters',
+  title: 'Compare Pine vs Clay vs Silica Cat Litter - Full Guide',
   description:
-    'Compare pine cat litter to clay, silica, corn, and other types. See how pine stacks up in odor control, absorbency, environmental impact, and more.',
+    'Compare pine cat litter to clay, silica, corn, and other types. See how pine stacks up in odor control, absorbency, and environmental impact.',
+  alternates: {
+    canonical: '/compare',
+  },
+  openGraph: {
+    title: 'Compare Pine vs Clay vs Silica Cat Litter - Full Guide',
+    description:
+      'Compare pine cat litter to clay, silica, corn, and other types. See how pine stacks up in odor control and absorbency.',
+    url: '/compare',
+    images: ['/og-image.png'],
+  },
 };
 
 const purrifyUrl = (path: string, medium: string) =>

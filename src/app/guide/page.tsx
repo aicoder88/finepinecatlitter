@@ -2,9 +2,19 @@ import { Metadata } from 'next';
 import styles from '@/styles/pages.module.css';
 
 export const metadata: Metadata = {
-  title: 'Pine Cat Litter Buying Guide',
+  title: 'Pine Cat Litter Buying Guide - How to Choose and Transition',
   description:
     'Complete guide to choosing and using pine cat litter. Learn how to transition your cat, maintain the litter box, and get the best results.',
+  alternates: {
+    canonical: '/guide',
+  },
+  openGraph: {
+    title: 'Pine Cat Litter Buying Guide - How to Choose and Transition',
+    description:
+      'Complete guide to choosing and using pine cat litter. Learn how to transition your cat and maintain the litter box.',
+    url: '/guide',
+    images: ['/og-image.png'],
+  },
 };
 
 const purrifyUrl = (path: string, medium: string) =>

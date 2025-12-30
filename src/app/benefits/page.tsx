@@ -3,9 +3,19 @@ import Link from 'next/link';
 import styles from '@/styles/pages.module.css';
 
 export const metadata: Metadata = {
-  title: 'Benefits of Pine Cat Litter',
+  title: 'Benefits of Pine Cat Litter for Cats and the Environment',
   description:
-    'Discover all the benefits of pine cat litter: natural odor control, eco-friendly, lightweight, and safe for cats. Compare pine to clay and other litters.',
+    'Discover all the benefits of pine cat litter: natural odor control, eco-friendly, lightweight, and safe for cats. Compare pine to clay.',
+  alternates: {
+    canonical: '/benefits',
+  },
+  openGraph: {
+    title: 'Benefits of Pine Cat Litter for Cats and the Environment',
+    description:
+      'Discover all the benefits of pine cat litter: natural odor control, eco-friendly, lightweight, and safe for cats.',
+    url: '/benefits',
+    images: ['/og-image.png'],
+  },
 };
 
 const purrifyUrl = (path: string, medium: string) =>

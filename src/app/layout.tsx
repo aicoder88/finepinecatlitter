@@ -4,12 +4,13 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://finepinecatlitter.com"),
   title: {
     default: "Fine Pine Cat Litter | Natural Pine-Based Odor Control",
     template: "%s | Fine Pine Cat Litter",
   },
   description:
-    "Discover the natural power of pine cat litter. Sustainable, effective odor control with the fresh scent of the forest. No chemicals, no artificial fragrances.",
+    "Discover the natural power of pine cat litter. Sustainable, effective odor control with the fresh scent of the forest.",
   keywords: [
     "pine cat litter",
     "natural cat litter",
@@ -19,6 +20,9 @@ export const metadata: Metadata = {
     "pine pellets for cats",
   ],
   authors: [{ name: "Fine Pine Cat Litter" }],
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -27,12 +31,21 @@ export const metadata: Metadata = {
     title: "Fine Pine Cat Litter | Natural Pine-Based Odor Control",
     description:
       "Discover the natural power of pine cat litter. Sustainable, effective odor control with the fresh scent of the forest.",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Fine Pine Cat Litter - Natural Pine-Based Odor Control",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Fine Pine Cat Litter | Natural Pine-Based Odor Control",
     description:
       "Discover the natural power of pine cat litter. Sustainable, effective odor control with the fresh scent of the forest.",
+    images: ["/og-image.png"],
   },
 };
 
