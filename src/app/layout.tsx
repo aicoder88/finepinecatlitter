@@ -31,21 +31,12 @@ export const metadata: Metadata = {
     title: "Fine Pine Cat Litter | Natural Pine-Based Odor Control",
     description:
       "Discover the natural power of pine cat litter. Sustainable, effective odor control with the fresh scent of the forest.",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Fine Pine Cat Litter - Natural Pine-Based Odor Control",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Fine Pine Cat Litter | Natural Pine-Based Odor Control",
     description:
       "Discover the natural power of pine cat litter. Sustainable, effective odor control with the fresh scent of the forest.",
-    images: ["/og-image.png"],
   },
 };
 
