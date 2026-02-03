@@ -3,14 +3,14 @@ import Link from 'next/link';
 import styles from '@/styles/pages.module.css';
 
 export const metadata: Metadata = {
-  title: 'Benefits of Pine Cat Litter for Cats and the Environment',
+  title: 'Benefits of Fine Pine Cat Litter for Cats and the Environment',
   description:
-    'Discover all the benefits of pine cat litter: natural odor control, eco-friendly, lightweight, and safe for cats. Compare pine to clay.',
+    'Discover all the benefits of fine pine cat litter: natural odor control, eco-friendly, lightweight, and safe for cats. Compare wood-based pine to clay.',
   alternates: {
     canonical: '/benefits',
   },
   openGraph: {
-    title: 'Benefits of Pine Cat Litter for Cats and the Environment',
+    title: 'Benefits of Fine Pine Cat Litter for Cats and the Environment',
     description:
       'Discover all the benefits of pine cat litter: natural odor control, eco-friendly, lightweight, and safe for cats.',
     url: '/benefits',
@@ -28,10 +28,11 @@ export default function BenefitsPage() {
       <section className={styles.pageHero}>
         <div className="container">
           <span className="badge">Complete Overview</span>
-          <h1>Benefits of Pine Litter</h1>
+          <h1>Benefits of Fine Pine Litter</h1>
           <p>
             From natural odor control to environmental sustainability, discover
-            why pine is the smarter choice for your cat and the planet.
+            why <strong>fine pine cat litter</strong> is the smarter choice for your cat and the planet.
+            <a href={purrifyUrl('/products', 'benefits-hero')} className={styles.inlineLink}> Experience the benefits</a> for yourself.
           </p>
         </div>
       </section>
@@ -43,57 +44,58 @@ export default function BenefitsPage() {
             <span className="badge">For You & Your Cat</span>
             <h2>The Complete Picture</h2>
             <p>
-              Pine litter delivers benefits that go beyond just odor control.
+              <strong>Pine wood cat litter</strong> delivers benefits that go beyond just odor control.
+              See why thousands of cat owners are making the switch to <a href={purrifyUrl('/products', 'benefits-intro')} className={styles.inlineLink}>natural pine litter</a>.
             </p>
           </div>
 
           <div className={styles.benefitsGrid}>
             <div className={styles.benefitCard}>
-              <div className={styles.benefitIcon}>🌲</div>
+              <div className={styles.benefitIcon} role="img" aria-label="Pine tree">🌲</div>
               <div>
                 <h3>Natural Odor Control</h3>
                 <p>
                   Pine&apos;s natural phenols neutralize ammonia at the molecular level—
-                  no artificial fragrances or chemicals needed.
+                  no artificial fragrances or chemicals needed. <a href={purrifyUrl('/learn/science', 'benefits-odor')} className={styles.inlineLink}>Learn the science</a>.
                 </p>
               </div>
             </div>
 
             <div className={styles.benefitCard}>
-              <div className={styles.benefitIcon}>💧</div>
+              <div className={styles.benefitIcon} role="img" aria-label="Water droplet">💧</div>
               <div>
                 <h3>Superior Absorption</h3>
                 <p>
                   Absorbs 3x its weight in liquid, keeping the litter box drier
-                  longer and reducing the frequency of changes.
+                  longer and reducing the frequency of changes. <a href={purrifyUrl('/products', 'benefits-absorb')} className={styles.inlineLink}>See absorption in action</a>.
                 </p>
               </div>
             </div>
 
             <div className={styles.benefitCard}>
-              <div className={styles.benefitIcon}>🪶</div>
+              <div className={styles.benefitIcon} role="img" aria-label="Feather">🪶</div>
               <div>
                 <h3>Lightweight</h3>
                 <p>
                   40% lighter than clay litter, making it easier to carry, pour,
-                  and dispose of. Your back will thank you.
+                  and dispose of. Your back will thank you. <a href={purrifyUrl('/products', 'benefits-light')} className={styles.inlineLink}>Compare weights</a>.
                 </p>
               </div>
             </div>
 
             <div className={styles.benefitCard}>
-              <div className={styles.benefitIcon}>🌍</div>
+              <div className={styles.benefitIcon} role="img" aria-label="Earth">🌍</div>
               <div>
                 <h3>Eco-Friendly</h3>
                 <p>
                   Made from renewable sawdust byproducts. 100% biodegradable and
-                  often compostable (for non-waste portions).
+                  often compostable. <a href={purrifyUrl('/learn/sustainability', 'benefits-eco')} className={styles.inlineLink}>Our sustainability promise</a>.
                 </p>
               </div>
             </div>
 
             <div className={styles.benefitCard}>
-              <div className={styles.benefitIcon}>💨</div>
+              <div className={styles.benefitIcon} role="img" aria-label="Wind">💨</div>
               <div>
                 <h3>Low Dust</h3>
                 <p>
@@ -104,7 +106,7 @@ export default function BenefitsPage() {
             </div>
 
             <div className={styles.benefitCard}>
-              <div className={styles.benefitIcon}>🐾</div>
+              <div className={styles.benefitIcon} role="img" aria-label="Paw prints">🐾</div>
               <div>
                 <h3>Gentle on Paws</h3>
                 <p>
@@ -115,23 +117,25 @@ export default function BenefitsPage() {
             </div>
 
             <div className={styles.benefitCard}>
-              <div className={styles.benefitIcon}>💰</div>
+              <div className={styles.benefitIcon} role="img" aria-label="Money bag">💰</div>
               <div>
                 <h3>Cost Effective</h3>
                 <p>
                   Higher absorption means you use less litter. Many cat owners
                   find pine litter lasts longer than comparable clay amounts.
+                  <a href={purrifyUrl('/products', 'benefits-cost')} className={styles.inlineLink}> Shop affordable pine litter</a>.
                 </p>
               </div>
             </div>
 
             <div className={styles.benefitCard}>
-              <div className={styles.benefitIcon}>✨</div>
+              <div className={styles.benefitIcon} role="img" aria-label="Sparkles">✨</div>
               <div>
                 <h3>Chemical-Free</h3>
                 <p>
                   No artificial fragrances, dyes, or chemical additives. Just
                   pure, kiln-dried pine that&apos;s safe if accidentally ingested.
+                  <a href={purrifyUrl('/learn/safety', 'benefits-safe')} className={styles.inlineLink}> Safety first</a>.
                 </p>
               </div>
             </div>
@@ -147,22 +151,22 @@ export default function BenefitsPage() {
               <span className="badge">Cat Health</span>
               <h2>Benefits for Your Cat</h2>
               <p>
-                Pine litter isn&apos;t just better for the environment—it&apos;s often
-                better for your cat&apos;s health too.
+                <strong>Fine pine litter</strong> isn&apos;t just better for the environment—it&apos;s often
+                better for your cat&apos;s health too. Discover why <a href={purrifyUrl('/products', 'benefits-cat')} className={styles.inlineLink}>veterinarians recommend</a> natural litter options.
               </p>
 
               <h3>Respiratory Health</h3>
               <p>
                 The low-dust nature of pine pellets means less airborne particles
                 for your cat to breathe. This is especially important for cats
-                with asthma or other respiratory conditions.
+                with asthma or other respiratory conditions. <a href={purrifyUrl('/learn/safety', 'benefits-respiratory')} className={styles.inlineLink}>Learn about respiratory health</a>.
               </p>
 
               <h3>No Chemical Exposure</h3>
               <p>
                 Cats groom themselves constantly, which means anything that sticks
                 to their paws gets ingested. Pine&apos;s natural composition means
-                no synthetic chemicals entering your cat&apos;s system.
+                no synthetic chemicals entering your cat&apos;s system. <a href={purrifyUrl('/learn/how-it-works', 'benefits-chemicals')} className={styles.inlineLink}>Why natural matters</a>.
               </p>
 
               <h3>Gentle Texture</h3>
@@ -177,13 +181,14 @@ export default function BenefitsPage() {
               <p>
                 While artificial fragrances can deter cats from using the litter
                 box, the subtle natural scent of pine is generally well-accepted
-                by most cats after a brief adjustment period.
+                by most cats after a brief adjustment period. <a href={purrifyUrl('/learn/faq', 'benefits-scent')} className={styles.inlineLink}>Tips for transition</a>.
               </p>
             </div>
 
             <aside className={styles.sidebar}>
               <div className={styles.sidebarCard}>
-                <h4>🐱 Cat-Friendly Features</h4>
+                <h4 role="img" aria-label="Cat face">🐱</h4>
+                <h4>Cat-Friendly Features</h4>
                 <ul>
                   <li>Low dust for respiratory health</li>
                   <li>No chemicals to ingest</li>
@@ -191,6 +196,9 @@ export default function BenefitsPage() {
                   <li>Subtle natural scent</li>
                   <li>Non-tracking formula</li>
                 </ul>
+                <p style={{ marginTop: 'var(--space-4)' }}>
+                  <a href={purrifyUrl('/products', 'benefits-features')} className={styles.inlineLink}>Shop cat-friendly litter →</a>
+                </p>
               </div>
             </aside>
           </div>
@@ -204,24 +212,24 @@ export default function BenefitsPage() {
             <span className="badge">Sustainability</span>
             <h2>Better for the Planet</h2>
             <p>
-              Every choice matters. Here&apos;s how pine litter helps reduce
-              environmental impact.
+              Every choice matters. Here&apos;s how <strong>biodegradable pine litter</strong> helps reduce
+              environmental impact. Make the switch to <a href={purrifyUrl('/products', 'benefits-planet')} className={styles.inlineLink}>sustainable cat care</a>.
             </p>
           </div>
 
           <div className={styles.cardsGrid}>
             <div className={styles.card}>
-              <div className={styles.cardIcon}>♻️</div>
+              <div className={styles.cardIcon} role="img" aria-label="Recycling symbol">♻️</div>
               <h3>Renewable Resource</h3>
               <p>
                 Made from pine sawdust—a byproduct of the lumber industry that
                 would otherwise be discarded. Trees are replanted, making it
-                a sustainable cycle.
+                a sustainable cycle. <a href={purrifyUrl('/learn/sustainability', 'benefits-renewable')} className={styles.inlineLink}>Our sourcing</a>.
               </p>
             </div>
 
             <div className={styles.card}>
-              <div className={styles.cardIcon}>🌱</div>
+              <div className={styles.cardIcon} role="img" aria-label="Seedling">🌱</div>
               <h3>Biodegradable</h3>
               <p>
                 Unlike clay which sits in landfills for centuries, pine breaks
@@ -230,11 +238,12 @@ export default function BenefitsPage() {
             </div>
 
             <div className={styles.card}>
-              <div className={styles.cardIcon}>⚡</div>
+              <div className={styles.cardIcon} role="img" aria-label="Lightning bolt">⚡</div>
               <h3>Low Carbon Footprint</h3>
               <p>
                 No strip mining, minimal processing, and lighter shipping weight
                 all contribute to a significantly lower carbon footprint than clay.
+                <a href={purrifyUrl('/learn/sustainability', 'benefits-carbon')} className={styles.inlineLink}> Calculate the impact</a>.
               </p>
             </div>
           </div>
@@ -246,8 +255,8 @@ export default function BenefitsPage() {
         <div className="container">
           <h2>Ready to Make the Switch?</h2>
           <p>
-            Purrify offers the benefits of pine enhanced with natural biochar
-            for maximum odor control.
+            <a href={purrifyUrl('/', 'benefits-cta')} className={styles.inlineLink}>Purrify</a> offers the benefits of <strong>fine pine</strong> enhanced with natural biochar
+            for maximum odor control. Join the movement toward <strong>natural wood-based cat litter</strong>.
           </p>
           <div className={styles.ctaActions}>
             <a
@@ -256,7 +265,7 @@ export default function BenefitsPage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Shop Purrify
+              Shop Fine Pine Litter
             </a>
             <Link href="/compare" className={`btn btn-lg ${styles.btnOutline}`}>
               Compare Litters →

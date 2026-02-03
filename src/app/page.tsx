@@ -12,10 +12,10 @@ export default function Home() {
         <div className="container">
           <div className={styles.heroContent}>
             <span className="badge">Nature&apos;s Best</span>
-            <h1>The Natural Power of Pine</h1>
+            <h1>The Natural Power of Fine Pine Cat Litter</h1>
             <p className={styles.heroSubtitle}>
-              Discover why pine cat litter is the smart, sustainable choice for
-              cat owners who want effective odor control straight from nature.
+              Discover why <strong>fine pine cat litter</strong> is the smart, sustainable choice for
+              cat owners who want effective odor control straight from nature. Our <a href={purrifyUrl('/products', 'hero-text')} className={styles.inlineLink}>premium pine litter</a> delivers unmatched freshness.
             </p>
             <div className={styles.heroActions}>
               <a
@@ -24,7 +24,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Shop Purrify
+                Shop Purrify Pine Litter
               </a>
               <Link href="/why-pine" className={`btn btn-lg ${styles.btnOutline}`}>
                 Learn About Pine →
@@ -41,36 +41,36 @@ export default function Home() {
             <span className="badge">Why Pine Works</span>
             <h2>The Forest in Your Litter Box</h2>
             <p>
-              Pine litter harnesses millions of years of natural evolution to
-              control odors effectively and sustainably.
+              <strong>Pine wood cat litter</strong> harnesses millions of years of natural evolution to
+              control odors effectively and sustainably. Unlike clay litter, <a href={purrifyUrl('/learn/how-it-works', 'features-text')} className={styles.inlineLink}>pine naturally neutralizes ammonia</a> without chemicals.
             </p>
           </div>
 
           <div className={styles.featuresGrid}>
             <div className={styles.featureCard}>
-              <div className={styles.featureIcon}>🌲</div>
+              <div className={styles.featureIcon} role="img" aria-label="Pine tree representing natural odor control">🌲</div>
               <h3>Natural Odor Control</h3>
               <p>
                 Pine contains natural oils and phenols that neutralize ammonia
-                and other odor compounds on contact.
+                and other odor compounds on contact. <a href={purrifyUrl('/learn/science', 'feature-odor')} className={styles.inlineLink}>Learn about the science</a> behind pine&apos;s effectiveness.
               </p>
             </div>
 
             <div className={styles.featureCard}>
-              <div className={styles.featureIcon}>♻️</div>
+              <div className={styles.featureIcon} role="img" aria-label="Recycling symbol representing sustainability">♻️</div>
               <h3>100% Sustainable</h3>
               <p>
                 Made from renewable pine sawdust—a byproduct of lumber mills
-                that would otherwise go to waste.
+                that would otherwise go to waste. Our <a href={purrifyUrl('/products', 'feature-eco')} className={styles.inlineLink}>eco-friendly pine litter</a> supports a greener planet.
               </p>
             </div>
 
             <div className={styles.featureCard}>
-              <div className={styles.featureIcon}>🌿</div>
+              <div className={styles.featureIcon} role="img" aria-label="Herb representing fresh forest scent">🌿</div>
               <h3>Fresh Forest Scent</h3>
               <p>
                 Subtle, natural pine fragrance that&apos;s pleasant to humans without
-                overwhelming your cat&apos;s sensitive nose.
+                overwhelming your cat&apos;s sensitive nose. Experience <a href={purrifyUrl('/products', 'feature-scent')} className={styles.inlineLink}>natural freshness</a>.
               </p>
             </div>
           </div>
@@ -85,25 +85,25 @@ export default function Home() {
               <span className="badge">The Science</span>
               <h2>Why Pine Outperforms Clay</h2>
               <p>
-                Traditional clay litters absorb moisture, but pine does something
+                Traditional clay litters absorb moisture, but <strong>natural pine litter</strong> does something
                 better—it actually neutralizes odors at the molecular level while
-                absorbing 3x its weight in liquid.
+                absorbing 3x its weight in liquid. <a href={purrifyUrl('/learn/biochar', 'why-pine-text')} className={styles.inlineLink}>Purrify enhances pine with biochar</a> for even better results.
               </p>
               <ul className={styles.whyPineList}>
                 <li>
-                  <span className={styles.checkIcon}>✓</span>
+                  <span className={styles.checkIcon} role="img" aria-label="Check mark">✓</span>
                   <span>Absorbs 3x more liquid than clay</span>
                 </li>
                 <li>
-                  <span className={styles.checkIcon}>✓</span>
+                  <span className={styles.checkIcon} role="img" aria-label="Check mark">✓</span>
                   <span>Neutralizes ammonia naturally</span>
                 </li>
                 <li>
-                  <span className={styles.checkIcon}>✓</span>
+                  <span className={styles.checkIcon} role="img" aria-label="Check mark">✓</span>
                   <span>Lightweight and easy to carry</span>
                 </li>
                 <li>
-                  <span className={styles.checkIcon}>✓</span>
+                  <span className={styles.checkIcon} role="img" aria-label="Check mark">✓</span>
                   <span>Biodegradable and compostable</span>
                 </li>
               </ul>
@@ -113,7 +113,7 @@ export default function Home() {
             </div>
 
             <div className={styles.pineVisual}>
-              <h3>🌲 Pine by the Numbers</h3>
+              <h3 role="img" aria-label="Pine tree">🌲</h3>
               <div className={styles.statsGrid}>
                 <div className={styles.stat}>
                   <span className={styles.statNumber}>3x</span>
@@ -144,7 +144,8 @@ export default function Home() {
             <span className="badge">Comparison</span>
             <h2>Pine vs. Traditional Litters</h2>
             <p>
-              See how pine stacks up against clay and other common litter types.
+              See how <strong>wood-based cat litter</strong> stacks up against clay and other common litter types.
+              Ready to make the switch? <a href={purrifyUrl('/products', 'compare-text')} className={styles.inlineLink}>Shop biodegradable pine litter</a> today.
             </p>
           </div>
 
@@ -156,28 +157,28 @@ export default function Home() {
             </div>
             <div className={styles.comparisonRow}>
               <div className={styles.comparisonCell}>Natural odor control</div>
-              <div className={styles.comparisonCell}><span className={styles.yes}>✓ Yes</span></div>
-              <div className={styles.comparisonCell}><span className={styles.no}>✗ No (needs additives)</span></div>
+              <div className={styles.comparisonCell}><span className={styles.yes} role="img" aria-label="Check mark">✓</span> Yes</div>
+              <div className={styles.comparisonCell}><span className={styles.no} role="img" aria-label="X mark">✗</span> No (needs additives)</div>
             </div>
             <div className={styles.comparisonRow}>
               <div className={styles.comparisonCell}>Biodegradable</div>
-              <div className={styles.comparisonCell}><span className={styles.yes}>✓ 100%</span></div>
-              <div className={styles.comparisonCell}><span className={styles.no}>✗ No</span></div>
+              <div className={styles.comparisonCell}><span className={styles.yes} role="img" aria-label="Check mark">✓</span> 100%</div>
+              <div className={styles.comparisonCell}><span className={styles.no} role="img" aria-label="X mark">✗</span> No</div>
             </div>
             <div className={styles.comparisonRow}>
               <div className={styles.comparisonCell}>Lightweight</div>
-              <div className={styles.comparisonCell}><span className={styles.yes}>✓ 40% lighter</span></div>
-              <div className={styles.comparisonCell}><span className={styles.no}>✗ Heavy</span></div>
+              <div className={styles.comparisonCell}><span className={styles.yes} role="img" aria-label="Check mark">✓</span> 40% lighter</div>
+              <div className={styles.comparisonCell}><span className={styles.no} role="img" aria-label="X mark">✗</span> Heavy</div>
             </div>
             <div className={styles.comparisonRow}>
               <div className={styles.comparisonCell}>Renewable resource</div>
-              <div className={styles.comparisonCell}><span className={styles.yes}>✓ Yes</span></div>
-              <div className={styles.comparisonCell}><span className={styles.no}>✗ Strip-mined</span></div>
+              <div className={styles.comparisonCell}><span className={styles.yes} role="img" aria-label="Check mark">✓</span> Yes</div>
+              <div className={styles.comparisonCell}><span className={styles.no} role="img" aria-label="X mark">✗</span> Strip-mined</div>
             </div>
             <div className={styles.comparisonRow}>
               <div className={styles.comparisonCell}>Low dust</div>
-              <div className={styles.comparisonCell}><span className={styles.yes}>✓ Very low</span></div>
-              <div className={styles.comparisonCell}><span className={styles.no}>✗ Often dusty</span></div>
+              <div className={styles.comparisonCell}><span className={styles.yes} role="img" aria-label="Check mark">✓</span> Very low</div>
+              <div className={styles.comparisonCell}><span className={styles.no} role="img" aria-label="X mark">✗</span> Often dusty</div>
             </div>
           </div>
 
@@ -192,10 +193,10 @@ export default function Home() {
       {/* CTA Section */}
       <section className={styles.cta}>
         <div className="container">
-          <h2>Experience the Pine Difference</h2>
+          <h2>Experience the Fine Pine Difference</h2>
           <p>
-            Purrify combines natural biochar with pine for the ultimate odor
-            control—harnessing the best of nature for your cat.
+            <a href={purrifyUrl('/', 'cta-text')} className={styles.inlineLink}>Purrify</a> combines natural biochar with premium pine for the ultimate odor
+            control—harnessing the best of nature for your cat. Our <strong>fine pine cat litter</strong> is trusted by thousands of Canadian cat owners.
           </p>
           <div className={styles.ctaActions}>
             <a
@@ -204,7 +205,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Shop Purrify
+              Shop Fine Pine Litter
             </a>
             <Link href="/guide" className={`btn btn-lg ${styles.btnOutline}`}>
               Read Buying Guide

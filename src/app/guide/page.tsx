@@ -1,10 +1,11 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import styles from '@/styles/pages.module.css';
 
 export const metadata: Metadata = {
   title: 'Pine Cat Litter Buying Guide - How to Choose and Transition',
   description:
-    'Complete guide to choosing and using pine cat litter. Learn how to transition your cat, maintain the litter box, and get the best results.',
+    'Complete guide to choosing and using fine pine cat litter. Learn how to transition your cat, maintain the litter box, and get the best results from wood-based litter.',
   alternates: {
     canonical: '/guide',
   },
@@ -30,7 +31,7 @@ export default function GuidePage() {
           <h1>Pine Litter Buying Guide</h1>
           <p>
             Everything you need to know about choosing, transitioning to, and
-            maintaining pine cat litter for the best results.
+            maintaining <strong>fine pine cat litter</strong> for the best results. Looking for <a href={purrifyUrl('/products', 'guide-hero')} className={styles.inlineLink}>premium pine litter options</a>? We&apos;ve got you covered.
           </p>
         </div>
       </section>
@@ -41,45 +42,48 @@ export default function GuidePage() {
           {/* Section 1 */}
           <div className={styles.guideSection}>
             <h2>
-              <span className={styles.guideNumber}>1</span>
+              <span className={styles.guideNumber} role="img" aria-label="Number one">1</span>
               Choosing the Right Pine Litter
             </h2>
             <div className={styles.contentGrid} style={{ gap: 'var(--space-8)' }}>
               <div className={styles.contentMain}>
                 <h3>Pellets vs. Shavings</h3>
                 <p>
-                  Pine litter comes in two main forms: compressed pellets and loose
+                  <strong>Pine cat litter</strong> comes in two main forms: compressed pellets and loose
                   shavings. Pellets are the most popular choice—they&apos;re cleaner,
                   more absorbent, and break down into sawdust when wet, making it
-                  easy to spot and remove soiled areas.
+                  easy to spot and remove soiled areas. <a href={purrifyUrl('/products', 'guide-pellets')} className={styles.inlineLink}>Purrify&apos;s pine pellets</a> are designed for maximum absorption.
                 </p>
 
                 <h3>Look for Kiln-Dried Pine</h3>
                 <p>
-                  Quality pine litter should be kiln-dried. This process removes
+                  Quality <strong>wood-based cat litter</strong> should be kiln-dried. This process removes
                   moisture and potentially harmful phenolic compounds while
                   preserving the beneficial natural properties. Avoid raw or
-                  untreated pine products not intended for pet use.
+                  untreated pine products not intended for pet use. The <a href={purrifyUrl('/learn/safety', 'guide-safety')} className={styles.inlineLink}>best pine litters</a> are always kiln-dried.
                 </p>
 
                 <h3>Check for Additives</h3>
                 <p>
-                  The best pine litters are 100% natural with no artificial
+                  The best <strong>natural pine litter</strong> is 100% natural with no artificial
                   fragrances, dyes, or chemical additives. Some brands add baking
                   soda or other odor enhancers—these are generally safe but
-                  unnecessary if you maintain the box properly.
+                  unnecessary if you maintain the box properly. <a href={purrifyUrl('/learn/how-it-works', 'guide-additives')} className={styles.inlineLink}>Learn why pure pine works best</a>.
                 </p>
               </div>
               <aside className={styles.sidebar}>
                 <div className={styles.sidebarCard}>
                   <h4>Quick Checklist</h4>
                   <ul>
-                    <li>✓ Kiln-dried pine</li>
-                    <li>✓ 100% natural</li>
-                    <li>✓ No artificial fragrances</li>
-                    <li>✓ Pellet form preferred</li>
-                    <li>✓ From reputable brand</li>
+                    <li role="img" aria-label="Check mark">✓ Kiln-dried pine</li>
+                    <li role="img" aria-label="Check mark">✓ 100% natural</li>
+                    <li role="img" aria-label="Check mark">✓ No artificial fragrances</li>
+                    <li role="img" aria-label="Check mark">✓ Pellet form preferred</li>
+                    <li role="img" aria-label="Check mark">✓ From reputable brand</li>
                   </ul>
+                  <p style={{ marginTop: 'var(--space-4)', fontSize: '0.875rem' }}>
+                    <a href={purrifyUrl('/products', 'guide-checklist')} className={styles.inlineLink}>Shop kiln-dried pine litter →</a>
+                  </p>
                 </div>
               </aside>
             </div>
@@ -88,19 +92,19 @@ export default function GuidePage() {
           {/* Section 2 */}
           <div className={styles.guideSection}>
             <h2>
-              <span className={styles.guideNumber}>2</span>
+              <span className={styles.guideNumber} role="img" aria-label="Number two">2</span>
               Transitioning Your Cat
             </h2>
             <div className={styles.contentMain} style={{ maxWidth: '100%' }}>
               <p>
-                Most cats adapt to pine litter within 1-2 weeks. Here&apos;s the
+                Most cats adapt to <strong>biodegradable pine litter</strong> within 1-2 weeks. Here&apos;s the
                 recommended transition approach:
               </p>
 
               <h3>Week 1: Introduction</h3>
               <p>
                 Mix 25% pine pellets with 75% of your current litter. This lets
-                your cat get used to the new texture and scent gradually.
+                your cat get used to the new texture and scent gradually. <a href={purrifyUrl('/learn/faq', 'guide-transition')} className={styles.inlineLink}>See our FAQ</a> for tips on picky cats.
               </p>
 
               <h3>Week 2: Half and Half</h3>
@@ -112,17 +116,17 @@ export default function GuidePage() {
               <h3>Week 3: Majority Pine</h3>
               <p>
                 Switch to 75% pine, 25% old litter. Your cat should be fully
-                comfortable with the new texture now.
+                comfortable with the <strong>fine pine texture</strong> now.
               </p>
 
               <h3>Week 4: Complete Transition</h3>
               <p>
                 Move to 100% pine litter. Monitor for the first few days to
-                ensure your cat is using the box normally.
+                ensure your cat is using the box normally. Need help? <a href={purrifyUrl('/contact', 'guide-help')} className={styles.inlineLink}>Contact our team</a>.
               </p>
 
               <div className={styles.sidebarCard} style={{ marginTop: 'var(--space-6)', maxWidth: '500px' }}>
-                <h4>💡 Tips for Success</h4>
+                <h4 role="img" aria-label="Light bulb">💡 Tips for Success</h4>
                 <ul>
                   <li>Keep the box in the same location</li>
                   <li>Don&apos;t change boxes during transition</li>
@@ -136,22 +140,22 @@ export default function GuidePage() {
           {/* Section 3 */}
           <div className={styles.guideSection}>
             <h2>
-              <span className={styles.guideNumber}>3</span>
+              <span className={styles.guideNumber} role="img" aria-label="Number three">3</span>
               Litter Box Setup
             </h2>
             <div className={styles.contentMain} style={{ maxWidth: '100%' }}>
               <h3>How Much Litter to Use</h3>
               <p>
-                Fill the box with 1-2 inches of pine pellets. Unlike clay, you
+                Fill the box with 1-2 inches of <strong>pine pellets</strong>. Unlike clay, you
                 don&apos;t need a deep layer. The pellets expand as they absorb
-                moisture, so starting with less is actually better.
+                moisture, so starting with less is actually better. <a href={purrifyUrl('/products', 'guide-amount')} className={styles.inlineLink}>Get the right amount</a> of pine litter for your cat.
               </p>
 
               <h3>Box Type Recommendations</h3>
               <p>
-                Pine litter works with any style of litter box. However, if
+                <strong>Pine cat litter</strong> works with any style of litter box. However, if
                 you want to take advantage of the sawdust-sifting method,
-                consider a sifting litter box system:
+                consider a <a href={purrifyUrl('/products/litter-box', 'guide-box')} className={styles.inlineLink}>sifting litter box system</a>:
               </p>
               <ul>
                 <li>Fresh pellets stay on top</li>
@@ -172,7 +176,7 @@ export default function GuidePage() {
           {/* Section 4 */}
           <div className={styles.guideSection}>
             <h2>
-              <span className={styles.guideNumber}>4</span>
+              <span className={styles.guideNumber} role="img" aria-label="Number four">4</span>
               Daily & Weekly Maintenance
             </h2>
             <div className={styles.contentGrid} style={{ gap: 'var(--space-8)' }}>
@@ -197,16 +201,17 @@ export default function GuidePage() {
                   <li>Complete litter change</li>
                   <li>Wash box with mild soap</li>
                   <li>Rinse thoroughly and dry completely</li>
-                  <li>Refill with fresh pellets</li>
+                  <li>Refill with fresh <a href={purrifyUrl('/products', 'guide-refill')} className={styles.inlineLink}>pine litter</a></li>
                 </ul>
               </div>
               <aside className={styles.sidebar}>
                 <div className={styles.sidebarCard}>
-                  <h4>🌲 Pine Tip</h4>
+                  <h4 role="img" aria-label="Pine tree">🌲</h4>
+                  <h4>Pine Tip</h4>
                   <p style={{ fontSize: '0.875rem', color: 'var(--text-muted)' }}>
                     The natural pine scent is strongest with fresh pellets.
                     If you notice odors, it&apos;s usually a sign to add more
-                    fresh pellets or do a complete change.
+                    fresh pellets or do a complete change. <a href={purrifyUrl('/learn/faq', 'guide-tip')} className={styles.inlineLink}>More tips</a>.
                   </p>
                 </div>
               </aside>
@@ -216,15 +221,15 @@ export default function GuidePage() {
           {/* Section 5 */}
           <div className={styles.guideSection}>
             <h2>
-              <span className={styles.guideNumber}>5</span>
+              <span className={styles.guideNumber} role="img" aria-label="Number five">5</span>
               Troubleshooting Common Issues
             </h2>
             <div className={styles.contentMain} style={{ maxWidth: '100%' }}>
               <h3>Cat Won&apos;t Use the Box</h3>
               <p>
-                If your cat is avoiding the pine litter, try slowing down the
+                If your cat is avoiding the <strong>pine litter</strong>, try slowing down the
                 transition. Go back to a higher percentage of the old litter
-                and increase pine more gradually. Some cats may take 4-6 weeks.
+                and increase pine more gradually. Some cats may take 4-6 weeks. <a href={purrifyUrl('/learn/faq', 'guide-troubleshoot')} className={styles.inlineLink}>Read our transition FAQ</a>.
               </p>
 
               <h3>Odor Issues</h3>
@@ -237,6 +242,7 @@ export default function GuidePage() {
                 <li>Ensure adequate ventilation</li>
                 <li>Consider a complete litter change</li>
               </ul>
+              <p>For maximum odor control, try <a href={purrifyUrl('/products', 'guide-odor')} className={styles.inlineLink}>Purrify with biochar</a>.</p>
 
               <h3>Tracking</h3>
               <p>
@@ -258,13 +264,13 @@ export default function GuidePage() {
           {/* Section 6 */}
           <div className={styles.guideSection}>
             <h2>
-              <span className={styles.guideNumber}>6</span>
+              <span className={styles.guideNumber} role="img" aria-label="Number six">6</span>
               Disposal Options
             </h2>
             <div className={styles.contentMain} style={{ maxWidth: '100%' }}>
               <h3>Regular Trash</h3>
               <p>
-                Pine litter can go in your regular garbage. It&apos;s biodegradable,
+                <strong>Biodegradable pine litter</strong> can go in your regular garbage. It&apos;s biodegradable,
                 so it will break down in landfills much faster than clay.
               </p>
 
@@ -289,10 +295,10 @@ export default function GuidePage() {
       {/* CTA */}
       <section className={styles.ctaSection}>
         <div className="container">
-          <h2>Ready to Try Pine?</h2>
+          <h2>Ready to Try Fine Pine?</h2>
           <p>
-            Purrify offers premium pine-based litter enhanced with natural
-            biochar for the best odor control nature can provide.
+            <a href={purrifyUrl('/', 'guide-cta')} className={styles.inlineLink}>Purrify</a> offers premium <strong>pine-based litter</strong> enhanced with natural
+            biochar for the best odor control nature can provide. Join thousands of happy cat owners who&apos;ve switched to <strong>fine pine cat litter</strong>.
           </p>
           <div className={styles.ctaActions}>
             <a
@@ -301,7 +307,7 @@ export default function GuidePage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Shop Purrify
+              Shop Pine Litter
             </a>
             <a
               href={purrifyUrl('/learn/faq', 'guide')}

@@ -243,6 +243,19 @@
   flex-wrap: wrap;
 }
 
+/* Inline Links */
+.inlineLink {
+  color: var(--white);
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.5);
+  text-underline-offset: 2px;
+  transition: text-decoration-color 0.2s ease;
+}
+
+.inlineLink:hover {
+  text-decoration-color: var(--white);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .featuresGrid {

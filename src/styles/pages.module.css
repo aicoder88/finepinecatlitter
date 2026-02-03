@@ -312,6 +312,19 @@
   font-weight: 700;
 }
 
+/* Inline Links */
+.inlineLink {
+  color: var(--pine-green);
+  text-decoration: underline;
+  text-decoration-color: var(--pine-green-light);
+  text-underline-offset: 2px;
+  transition: text-decoration-color 0.2s ease;
+}
+
+.inlineLink:hover {
+  text-decoration-color: var(--pine-green);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .contentGrid {
