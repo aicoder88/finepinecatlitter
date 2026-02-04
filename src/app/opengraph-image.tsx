@@ -2,6 +2,9 @@ import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
 
+// Generate once and cache for 1 day (reduces ISR writes)
+export const revalidate = 86400;
+
 export const alt = "Fine Pine Cat Litter - Natural Pine-Based Odor Control";
 export const size = {
   width: 1200,
