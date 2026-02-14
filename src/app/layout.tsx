@@ -41,7 +41,7 @@ export const metadata: Metadata = {
       "Discover the natural power of fine pine cat litter. Sustainable, effective odor control with the fresh scent of the forest.",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og/home.png",
         width: 1200,
         height: 630,
         alt: "Fine Pine Cat Litter - Natural Pine-Based Odor Control",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     title: "Fine Pine Cat Litter | Natural Pine-Based Odor Control",
     description:
       "Discover the natural power of fine pine cat litter. Sustainable, effective odor control with the fresh scent of the forest.",
-    images: ["/twitter-image.png"],
+    images: ["/og/home.png"],
   },
   robots: {
     index: true,
@@ -81,7 +81,7 @@ const organizationSchema = {
   url: "https://www.finepinecatlitter.com",
   logo: {
     "@type": "ImageObject",
-    url: "https://www.finepinecatlitter.com/og-image.png",
+    url: "https://www.finepinecatlitter.com/og/home.png",
     width: 1200,
     height: 630,
   },
@@ -102,7 +102,7 @@ const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
   name: "Fine Pine Cat Litter",
-  image: "https://www.finepinecatlitter.com/og-image.png",
+  image: "https://www.finepinecatlitter.com/og/home.png",
   description:
     "Natural pine cat litter with superior odor control. Made from 100% biodegradable pine wood pellets. Eco-friendly, lightweight, and highly absorbent.",
   brand: {
