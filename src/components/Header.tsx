@@ -41,7 +41,7 @@ export default function Header() {
           href="https://purrify.ca/products?utm_source=finepinecatlitter&utm_medium=header"
           className={styles.cta}
           target="_blank"
-          rel="noopener noreferrer"
+          rel="sponsored noopener noreferrer"
         >
           Shop Purrify
         </a>
@@ -70,7 +70,7 @@ export default function Header() {
         <a
           href="https://purrify.ca/products?utm_source=finepinecatlitter&utm_medium=mobile-header"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="sponsored noopener noreferrer"
         >
           Shop Purrify →
         </a>

@@ -5,16 +5,20 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap",
+    "build:cloudflare": "npx @cloudflare/next-on-pages",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@eslint/eslintrc": "^3.3.3",
     "next": "^15.5.9",
+    "next-sitemap": "^4.2.3",
     "react": "^19.2.3",
     "react-dom": "^19.2.3"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.13.16",
     "@types/node": "^20.19.27",
     "@types/react": "^18.3.27",
     "@types/react-dom": "^18.3.7",

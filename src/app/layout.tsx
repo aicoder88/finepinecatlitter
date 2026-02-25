@@ -87,9 +87,6 @@ const organizationSchema = {
   },
   description:
     "Discover the natural power of fine pine cat litter. Sustainable, effective odor control with the fresh scent of the forest.",
-  sameAs: [
-    "https://purrify.ca",
-  ],
   contactPoint: {
     "@type": "ContactPoint",
     contactType: "customer service",
@@ -217,6 +214,12 @@ export default function RootLayout({
         <link rel="alternate" hrefLang="en-CA" href="https://www.finepinecatlitter.com" />
         <link rel="alternate" hrefLang="fr-CA" href="https://www.finepinecatlitter.com" />
         <link rel="alternate" hrefLang="x-default" href="https://www.finepinecatlitter.com" />
+        {/* Replace CLOUDFLARE_BEACON_TOKEN with actual token from Cloudflare dashboard */}
+        <script
+          defer
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token":"CLOUDFLARE_BEACON_TOKEN"}'
+        />
         
         {/* JSON-LD Structured Data */}
         <script

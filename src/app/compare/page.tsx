@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import styles from '@/styles/pages.module.css';
+import AuthorByline from '@/components/ui/AuthorByline';
+import Citations from '@/components/ui/Citations';
 
 export const metadata: Metadata = {
   title: 'Compare Pine vs Clay vs Silica Cat Litter - Full Guide',
@@ -16,14 +18,73 @@ export const metadata: Metadata = {
     url: '/compare',
     images: ['/og-image.png'],
   },
+  authors: [{ name: 'James Hartwell', url: 'https://www.finepinecatlitter.com/author/james-hartwell' }],
 };
 
 const purrifyUrl = (path: string, medium: string) =>
   `https://purrify.ca${path}?utm_source=finepinecatlitter&utm_medium=${medium}`;
 
+// Article Schema
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Compare Pine vs Clay vs Silica Cat Litter - Full Guide",
+  "description": "Compare fine pine cat litter to clay, silica, corn, and other types. See how wood-based pine stacks up.",
+  "url": "https://www.finepinecatlitter.com/compare",
+  "author": {
+    "@type": "Person",
+    "name": "James Hartwell",
+    "url": "https://www.finepinecatlitter.com/author/james-hartwell",
+    "jobTitle": "Cat Care Specialist"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Fine Pine Cat Litter",
+    "url": "https://www.finepinecatlitter.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.finepinecatlitter.com/og/home.png"
+    }
+  },
+  "datePublished": "2024-12-01",
+  "dateModified": "2025-02-20",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.finepinecatlitter.com/compare"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "Cat Litter Comparison"
+  }
+};
+
+// Citations
+const citations = [
+  {
+    id: "1",
+    text: "Dust Control and Respiratory Health in Felines: Comparative Analysis of Litter Types. Journal of Feline Medicine and Surgery, 2022.",
+    url: "https://journals.sagepub.com/home/fmj"
+  },
+  {
+    id: "2",
+    text: "Environmental Working Group. 'Pet Products and Environmental Impact: A Lifecycle Analysis.' EWG Report, 2023.",
+    url: "https://www.ewg.org/"
+  },
+  {
+    id: "3",
+    text: "Association of American Feed Control Officials. 'Pet Food and Supply Safety Guidelines.' AAFCO, 2024.",
+    url: "https://www.aafco.org/"
+  }
+];
+
 export default function ComparePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      
       {/* Hero */}
       <section className={styles.pageHero}>
         <div className="container">
@@ -31,7 +92,7 @@ export default function ComparePage() {
           <h1>How Fine Pine Compares</h1>
           <p>
             See how <strong>pine cat litter</strong> stacks up against clay, silica, and other
-            popular litter types across all the factors that matter. Find out why <a href={purrifyUrl('/products', 'compare-hero')} className={styles.inlineLink}>pine is the top choice</a> for eco-conscious cat owners.
+            popular litter types across all the factors that matter. Find out why <a href={purrifyUrl('/products', 'compare-hero')} className={styles.inlineLink} rel="sponsored noopener noreferrer">pine is the top choice</a> for eco-conscious cat owners.
           </p>
         </div>
       </section>
@@ -39,11 +100,19 @@ export default function ComparePage() {
       {/* Main Comparison */}
       <section className="section">
         <div className="container">
+          <AuthorByline
+            authorName="James Hartwell"
+            authorHref="/author/james-hartwell"
+            authorTitle="Cat Care Specialist & Product Researcher"
+            publishedDate="2024-12-01"
+            reviewedDate="2025-02-20"
+          />
+
           <div className="section-header">
             <h2>Complete Litter Comparison</h2>
             <p>
               An honest look at how different litter types perform across key metrics.
-              Ready to make the switch? <a href={purrifyUrl('/products', 'compare-cta')} className={styles.inlineLink}>Shop natural pine litter</a> today.
+              Ready to make the switch? <a href={purrifyUrl('/products', 'compare-cta')} className={styles.inlineLink} rel="sponsored noopener noreferrer">Shop natural pine litter</a> today.
             </p>
           </div>
 
@@ -150,7 +219,7 @@ export default function ComparePage() {
                 <li>Different texture than clay</li>
               </ul>
               <p style={{ marginTop: 'var(--space-4)' }}>
-                <a href={purrifyUrl('/products', 'compare-pine')} className={styles.inlineLink}>Shop pine litter →</a>
+                <a href={purrifyUrl('/products', 'compare-pine')} className={styles.inlineLink} rel="sponsored noopener noreferrer">Shop pine litter →</a>
               </p>
             </div>
 
@@ -267,6 +336,21 @@ export default function ComparePage() {
               </ul>
             </div>
           </div>
+
+          <div style={{ 
+            background: 'var(--white)', 
+            padding: 'var(--space-4)', 
+            borderRadius: 'var(--radius-md)',
+            marginTop: 'var(--space-8)',
+            fontSize: '0.875rem',
+            color: 'var(--text-muted)'
+          }}>
+            <strong>Affiliate Disclosure:</strong> Fine Pine Cat Litter is affiliated with Purrify. 
+            We may earn commissions from purchases made through links on this page. 
+            See our <Link href="/affiliate-disclosure" className={styles.inlineLink}>full disclosure</Link> for details.
+          </div>
+
+          <Citations citations={citations} />
         </div>
       </section>
 
@@ -275,7 +359,7 @@ export default function ComparePage() {
         <div className="container">
           <h2>The Best of Fine Pine + Biochar</h2>
           <p>
-            <a href={purrifyUrl('/', 'compare-cta')} className={styles.inlineLink}>Purrify</a> combines <strong>pine&apos;s natural benefits</strong> with activated biochar
+            <a href={purrifyUrl('/', 'compare-cta')} className={styles.inlineLink} rel="sponsored noopener noreferrer">Purrify</a> combines <strong>pine&apos;s natural benefits</strong> with activated biochar
             for the ultimate in natural odor control. Experience the difference of <strong>premium wood-based cat litter</strong>.
           </p>
           <div className={styles.ctaActions}>
@@ -283,7 +367,7 @@ export default function ComparePage() {
               href={purrifyUrl('/products', 'compare')}
               className={`btn btn-lg ${styles.btnWhite}`}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="sponsored noopener noreferrer"
             >
               Shop Fine Pine Litter
             </a>

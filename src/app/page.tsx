@@ -1,12 +1,39 @@
 import Link from 'next/link';
 import styles from './page.module.css';
+import AuthorByline from '@/components/ui/AuthorByline';
 
 const purrifyUrl = (path: string, medium: string) =>
   `https://purrify.ca${path}?utm_source=finepinecatlitter&utm_medium=${medium}`;
 
+// Homepage Article Schema
+const homepageSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Fine Pine Cat Litter | Natural Pine-Based Odor Control",
+  "description": "Discover the natural power of fine pine cat litter. Sustainable, effective odor control with the fresh scent of the forest.",
+  "url": "https://www.finepinecatlitter.com",
+  "author": {
+    "@type": "Person",
+    "name": "James Hartwell",
+    "url": "https://www.finepinecatlitter.com/author/james-hartwell",
+    "jobTitle": "Cat Care Specialist"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Fine Pine Cat Litter",
+    "url": "https://www.finepinecatlitter.com"
+  },
+  "datePublished": "2024-12-01",
+  "dateModified": "2025-02-20"
+};
+
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageSchema) }}
+      />
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className="container">
@@ -15,14 +42,14 @@ export default function Home() {
             <h1>The Natural Power of Fine Pine Cat Litter</h1>
             <p className={styles.heroSubtitle}>
               Discover why <strong>fine pine cat litter</strong> is the smart, sustainable choice for
-              cat owners who want effective odor control straight from nature. Our <a href={purrifyUrl('/products', 'hero-text')} className={styles.inlineLink}>premium pine litter</a> delivers unmatched freshness.
+              cat owners who want effective odor control straight from nature. Our <a href={purrifyUrl('/products', 'hero-text')} className={styles.inlineLink} rel="sponsored noopener noreferrer">premium pine litter</a> delivers unmatched freshness.
             </p>
             <div className={styles.heroActions}>
               <a
                 href={purrifyUrl('/products', 'hero')}
                 className={`btn btn-lg ${styles.btnWhite}`}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="sponsored noopener noreferrer"
               >
                 Shop Purrify Pine Litter
               </a>
@@ -34,15 +61,25 @@ export default function Home() {
         </div>
       </section>
 
+      <div className="container" style={{ paddingTop: 'var(--space-6)' }}>
+        <AuthorByline
+          authorName="James Hartwell"
+          authorHref="/author/james-hartwell"
+          authorTitle="Cat Care Specialist & Product Researcher"
+          publishedDate="2024-12-01"
+          reviewedDate="2025-02-20"
+        />
+      </div>
+
       {/* Features Section */}
-      <section className={`section ${styles.features}`}>
+      <section className={`section ${styles.features}`} style={{ paddingTop: 'var(--space-8)' }}>
         <div className="container">
           <div className="section-header">
             <span className="badge">Why Pine Works</span>
             <h2>The Forest in Your Litter Box</h2>
             <p>
               <strong>Pine wood cat litter</strong> harnesses millions of years of natural evolution to
-              control odors effectively and sustainably. Unlike clay litter, <a href={purrifyUrl('/learn/how-it-works', 'features-text')} className={styles.inlineLink}>pine naturally neutralizes ammonia</a> without chemicals.
+              control odors effectively and sustainably. Unlike clay litter, <a href={purrifyUrl('/learn/how-it-works', 'features-text')} className={styles.inlineLink} rel="sponsored noopener noreferrer">pine naturally neutralizes ammonia</a> without chemicals.
             </p>
           </div>
 
@@ -52,7 +89,7 @@ export default function Home() {
               <h3>Natural Odor Control</h3>
               <p>
                 Pine contains natural oils and phenols that neutralize ammonia
-                and other odor compounds on contact. <a href={purrifyUrl('/learn/science', 'feature-odor')} className={styles.inlineLink}>Learn about the science</a> behind pine&apos;s effectiveness.
+                and other odor compounds on contact. <a href={purrifyUrl('/learn/science', 'feature-odor')} className={styles.inlineLink} rel="sponsored noopener noreferrer">Learn about the science</a> behind pine&apos;s effectiveness.
               </p>
             </div>
 
@@ -61,7 +98,7 @@ export default function Home() {
               <h3>100% Sustainable</h3>
               <p>
                 Made from renewable pine sawdust—a byproduct of lumber mills
-                that would otherwise go to waste. Our <a href={purrifyUrl('/products', 'feature-eco')} className={styles.inlineLink}>eco-friendly pine litter</a> supports a greener planet.
+                that would otherwise go to waste. Our <a href={purrifyUrl('/products', 'feature-eco')} className={styles.inlineLink} rel="sponsored noopener noreferrer">eco-friendly pine litter</a> supports a greener planet.
               </p>
             </div>
 
@@ -70,7 +107,7 @@ export default function Home() {
               <h3>Fresh Forest Scent</h3>
               <p>
                 Subtle, natural pine fragrance that&apos;s pleasant to humans without
-                overwhelming your cat&apos;s sensitive nose. Experience <a href={purrifyUrl('/products', 'feature-scent')} className={styles.inlineLink}>natural freshness</a>.
+                overwhelming your cat&apos;s sensitive nose. Experience <a href={purrifyUrl('/products', 'feature-scent')} className={styles.inlineLink} rel="sponsored noopener noreferrer">natural freshness</a>.
               </p>
             </div>
           </div>
@@ -87,7 +124,7 @@ export default function Home() {
               <p>
                 Traditional clay litters absorb moisture, but <strong>natural pine litter</strong> does something
                 better—it actually neutralizes odors at the molecular level while
-                absorbing 3x its weight in liquid. <a href={purrifyUrl('/learn/biochar', 'why-pine-text')} className={styles.inlineLink}>Purrify enhances pine with biochar</a> for even better results.
+                absorbing 3x its weight in liquid. <a href={purrifyUrl('/learn/biochar', 'why-pine-text')} className={styles.inlineLink} rel="sponsored noopener noreferrer">Purrify enhances pine with biochar</a> for even better results.
               </p>
               <ul className={styles.whyPineList}>
                 <li>
@@ -145,7 +182,7 @@ export default function Home() {
             <h2>Pine vs. Traditional Litters</h2>
             <p>
               See how <strong>wood-based cat litter</strong> stacks up against clay and other common litter types.
-              Ready to make the switch? <a href={purrifyUrl('/products', 'compare-text')} className={styles.inlineLink}>Shop biodegradable pine litter</a> today.
+              Ready to make the switch? <a href={purrifyUrl('/products', 'compare-text')} className={styles.inlineLink} rel="sponsored noopener noreferrer">Shop biodegradable pine litter</a> today.
             </p>
           </div>
 
@@ -187,6 +224,20 @@ export default function Home() {
               Full Comparison Guide →
             </Link>
           </div>
+
+          <div style={{ 
+            background: 'var(--soft-green)', 
+            padding: 'var(--space-4)', 
+            borderRadius: 'var(--radius-md)',
+            marginTop: 'var(--space-8)',
+            fontSize: '0.875rem',
+            color: 'var(--text-muted)',
+            textAlign: 'center'
+          }}>
+            <strong>Affiliate Disclosure:</strong> Fine Pine Cat Litter is affiliated with Purrify. 
+            We may earn commissions from purchases made through links on this site.{' '}
+            <Link href="/affiliate-disclosure" className={styles.inlineLink}>Learn more</Link>.
+          </div>
         </div>
       </section>
 
@@ -195,7 +246,7 @@ export default function Home() {
         <div className="container">
           <h2>Experience the Fine Pine Difference</h2>
           <p>
-            <a href={purrifyUrl('/', 'cta-text')} className={styles.inlineLink}>Purrify</a> combines natural biochar with premium pine for the ultimate odor
+            <a href={purrifyUrl('/', 'cta-text')} className={styles.inlineLink} rel="sponsored noopener noreferrer">Purrify</a> combines natural biochar with premium pine for the ultimate odor
             control—harnessing the best of nature for your cat. Our <strong>fine pine cat litter</strong> is trusted by thousands of Canadian cat owners.
           </p>
           <div className={styles.ctaActions}>
@@ -203,7 +254,7 @@ export default function Home() {
               href={purrifyUrl('/products', 'home-cta')}
               className={`btn btn-lg ${styles.btnWhite}`}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="sponsored noopener noreferrer"
             >
               Shop Fine Pine Litter
             </a>

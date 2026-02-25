@@ -79,6 +79,20 @@
   margin: 0;
 }
 
+.disclosure {
+  margin-top: var(--space-3) !important;
+  font-size: 0.75rem !important;
+}
+
+.disclosure a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: underline;
+}
+
+.disclosure a:hover {
+  color: var(--white);
+}
+
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr 1fr;

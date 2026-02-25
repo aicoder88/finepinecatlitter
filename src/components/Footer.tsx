@@ -29,38 +29,49 @@ export default function Footer() {
         </div>
 
         <div className={styles.column}>
-          <h4>Purrify</h4>
+          <h4>Trust & Transparency</h4>
           <div className={styles.links}>
-            <a href={purrifyUrl('/products', 'footer')}>
-              All Products
-            </a>
-            <a href={purrifyUrl('/learn/how-it-works', 'footer')}>
-              How It Works
-            </a>
-            <a href={purrifyUrl('/learn/science', 'footer')}>
-              The Science
-            </a>
-            <a href={purrifyUrl('/learn/faq', 'footer')}>
-              FAQ
-            </a>
+            <Link href="/about">About Us</Link>
+            <Link href="/author/james-hartwell">Our Author</Link>
+            <Link href="/editorial-policy">Editorial Policy</Link>
+            <Link href="/testing-methodology">Testing Methodology</Link>
+            <Link href="/affiliate-disclosure">Affiliate Disclosure</Link>
+            <Link href="/corrections">Corrections Policy</Link>
+            <Link href="/contact">Contact Us</Link>
           </div>
         </div>
 
         <div className={styles.column}>
-          <h4>Support</h4>
+          <h4>Purrify</h4>
           <div className={styles.links}>
-            <a href={purrifyUrl('/learn/safety', 'footer')}>
+            <a href={purrifyUrl('/products', 'footer')} rel="sponsored noopener noreferrer">
+              All Products
+            </a>
+            <a href={purrifyUrl('/learn/how-it-works', 'footer')} rel="sponsored noopener noreferrer">
+              How It Works
+            </a>
+            <a href={purrifyUrl('/learn/science', 'footer')} rel="sponsored noopener noreferrer">
+              The Science
+            </a>
+            <a href={purrifyUrl('/learn/faq', 'footer')} rel="sponsored noopener noreferrer">
+              FAQ
+            </a>
+            <a href={purrifyUrl('/learn/safety', 'footer')} rel="sponsored noopener noreferrer">
               Safety Info
             </a>
-            <a href={purrifyUrl('/contact', 'footer')}>
-              Contact Us
+            <a href={purrifyUrl('/contact', 'footer')} rel="sponsored noopener noreferrer">
+              Contact Purrify
             </a>
           </div>
         </div>
       </div>
 
       <div className={styles.bottom}>
-        <p>&copy; 2025 Fine Pine Cat Litter. A Purrify resource.</p>
+        <p>&copy; 2025 Fine Pine Cat Litter.</p>
+        <p className={styles.disclosure}>
+          <Link href="/affiliate-disclosure">Affiliate Disclosure</Link>: 
+          We may earn commissions from purchases made through links to Purrify products.
+        </p>
       </div>
     </footer>
   );

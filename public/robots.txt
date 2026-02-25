@@ -1,4 +1,9 @@
+# *
 User-agent: *
 Allow: /
 
-Sitemap: https://finepinecatlitter.com/sitemap.xml
+# Host
+Host: https://www.finepinecatlitter.com
+
+# Sitemaps
+Sitemap: https://www.finepinecatlitter.com/sitemap.xml
